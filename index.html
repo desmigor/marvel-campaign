@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
-    <title>PortWind | Portfolio</title>
+    <title>Marvel | Campaign</title>
 </head>
 
 <body class="font-nunito">
@@ -20,52 +20,51 @@
     <nav class="w-full sticky top-0 bg-white px-4 md:px-0 z-20 dark:bg-slate-900">
         <div class="container mx-auto py-5 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <img class="w-8" src="./images/logo.png" alt="">
-                <span class="text-2xl font-bold text-indigo-900">PortWind.</span>
+                <img class="w-16" src="./images/logo.png" alt="">
             </div>
-            <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase ">
-                <li class=" hover:text-indigo-600">
-                    <a href="#">Homepage</a>
+            <ul class="hidden md:flex space-x-10 text-gray-900 dark:text-white text-sm uppercase ">
+                <li class=" hover:text-red-600">
+                    <a href="#">Home</a>
                 </li>
-                <li class=" hover:text-indigo-600">
-                    <a href="#about">About Me</a>
+                <li class=" hover:text-red-600">
+                    <a href="#about">About</a>
                 </li>
-                <li class=" hover:text-indigo-600">
-                    <a href="#services">Services</a>
+                <li class=" hover:text-red-600">
+                    <a href="#genre">Genres</a>
                 </li>
-                <li class=" hover:text-indigo-600">
-                    <a href="#works">Works</a>
+                <li class=" hover:text-red-600">
+                    <a href="#movies">Movies</a>
                 </li>
-                <li class=" hover:text-indigo-600">
+                <li class=" hover:text-red-600">
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
-            <img id="moon" class="hidden md:block w-5 cursor-pointer" src="./images/moon.png" alt="">
+            <img id="moon" class="md:block w-5 cursor-pointer" src="./images/moon.png" alt="">
             <div id="hamburger" class="md:hidden space-y-1 cursor-pointer">
-                <div class="w-6 h-0.5 bg-black lines"></div>
-                <div class="w-6 h-0.5 bg-black lines"></div>
-                <div class="w-6 h-0.5 bg-black lines"></div>
+                <div class="w-6 h-0.5 bg-black dark:bg-white lines"></div>
+                <div class="w-6 h-0.5 bg-black dark:bg-white lines"></div>
+                <div class="w-6 h-0.5 bg-black dark:bg-white lines"></div>
             </div>
             <div id="close" class="hidden cursor-pointer z-20">
                 <div class="rotate-45 w-6 h-0.5 bg-white cross"></div>
                 <div class="-rotate-45 -mt-0.5 w-6 h-0.5 bg-white cross"></div>
             </div>
             <ul id="menu"
-                class="h-96 hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 space-y-10 text-white text-center">
+                class="h-96 hidden bg-red-600 absolute left-0 top-0 w-full p-10 space-y-10 text-white text-center">
                 <li>
-                    <a id="hLink" href="#">homepage</a>
+                    <a id="hLink" href="#">Home</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#about">about me</a>
+                    <a id="hLink" href="#about">About</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#services">services</a>
+                    <a id="hLink" href="#genre">Genres</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#works">works</a>
+                    <a id="hLink" href="#movies">Movies</a>
                 </li>
                 <li>
-                    <a id="hLink" href="#contact">contact</a>
+                    <a id="hLink" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -75,15 +74,18 @@
     <section class="py-2 lg:py-24 dark:bg-slate-900">
         <div class="m-auto container flex w-full h-full flex-col lg:flex-row justify-center items-center">
             <div class="flex flex-col gap-2 text-center lg:text-left">
-                <h1 id="text"
-                    class="text-red-700 font-bold text-xl h-12 lg:h-20 sm:text-4xl md:text-6xl lg:left-5 xl:left-48 xl:text-7xl">
+                <h1 id="text" class="text-red-600 font-bold text-4xl h-12 md:h-20 sm:text-4xl md:text-6xl xl:text-7xl">
                 </h1>
-                <span class="text-gray-600 font-normal text-lg dark:text-white w-auto lg:w-3/4">
+                <span class="text-gray-900 mb-4 font-normal text-lg dark:text-white w-auto px-4 md:px-0 lg:w-3/4">
                     The Marvel Cinematic Universe is an American media
                     franchise and shared universe centered on a series of superhero films produced by Marvel Studios.
                     The films are based on characters that appear in American comic books published by Marvel
                     Comics.
                 </span>
+                <a href="#about" class="mb-12 ">
+                    <button class="bg-red-600 text-white rounded-xl px-20 py-4 cursor-pointer hover:bg-red-700">View
+                        More</button>
+                </a>
             </div>
             <img class="w-auto lg:w-1/2" src="./images/heroes.png" alt="" />
         </div>
@@ -91,131 +93,128 @@
 
 
     <!-- about -->
-    <div id="about" class="px-10 dark:bg-slate-900">
+    <div id="about" class="px-4 dark:bg-slate-900">
         <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
             <!-- left -->
             <div class="relative">
-                <img class="h-1/4 absolute top-0 left-0 -z-10" src="./images/dots.png" alt="" />
-                <div class="h-full rounded-full overflow-hidden">
-                    <img src="./images/portrait.png" alt="" />
+                <div class="md:w-3/4 md:m-auto rounded-full overflow-hidden">
+                    <img src="./images/marveldisney.jpeg" alt="" />
                 </div>
             </div>
             <!-- right -->
             <div class="my-auto flex flex-col gap-3">
-                <h1 class="text-indigo-600 font-bold">ABOUT ME</h1>
-                <h1 class="text-3xl font-medium dark:text-white">Better Design</h1>
-                <h1 class="text-3xl font-medium dark:text-white">
-                    Better Experience
-                </h1>
-                <p class="text-gray-400">
-                    I design and build digital products. I'm also a multi-disciplinary
-                    maker with over 10 years of experiences in wide range of design
-                    disciplines.
+                <h1 class="text-red-600 font-bold text-4xl">About Marvel Studio</h1>
+                <h1 class="text-3xl text-gray-500">Best Movies on the Planet</h1>
+                <p class="text-lg  dark:text-white">
+                    The company is a wholly owned subsidiary of The Walt Disney Company since 2009, and is mainly known
+                    for its comic books by Marvel Comics, as well as its forays into films and television/streaming
+                    shows, including those within the Marvel Cinematic Universe (MCU).
                 </p>
-                <h2 class="text-gray-400 font-medium">HTML</h2>
+                <h2 class="font-normal dark:text-gray-500">Action</h2>
                 <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                    <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+                    <div class="w-full bg-red-600 h-1.5 rounded-md"></div>
                 </div>
-                <h2 class="text-gray-400 font-medium">Javascript</h2>
+                <h2 class="font-normal dark:text-gray-500">Comedy</h2>
                 <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                    <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+                    <div class="w-4/6 bg-red-600 h-1.5 rounded-md"></div>
                 </div>
-                <h2 class="text-gray-400 font-medium">React</h2>
+                <h2 class="font-normal dark:text-gray-500">Drama</h2>
                 <div class="w-full bg-gray-200 h-1.5 rounded-md">
-                    <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+                    <div class="w-5/6 bg-red-600 h-1.5 rounded-md"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- services -->
-    <div id="services" class="dark:bg-slate-900">
+    <div id="genre" class="dark:bg-slate-900">
         <div class="container mx-auto">
             <!-- top -->
             <div class="flex flex-col gap-3 items-center">
-                <h1 class="text-indigo-600 font-bold">SERVICES</h1>
-                <h1 class="text-3xl dark:text-white">What do I offer?</h1>
-                <p class="w-1/2 text-center text-gray-400">
-                    My approach to website design is to create a website that
-                    strengthens your company’s brand while ensuring ease of use and
-                    simplicity for your audience.
+                <h1 class="text-red-600 font-bold text-4xl">Genres</h1>
+                <h1 class="text-3xl text-gray-500">What genres do they have?</h1>
+                <p class="px-4 text-center dark:text-white">
+                    Movie genres are categories that define films based on narrative or stylistic elements. The genre of
+                    a film can help determine the characters, setting, plot structure, and tone. Action films, for
+                    example, typically include fight scenes and slow-motion camera shots.
                 </p>
             </div>
             <!-- bottom -->
             <div class="p-5 sm:p-0 flex flex-wrap justify-between">
                 <!-- card -->
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img class="w-10" src="./images/icon.png" alt="" />
-                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <img class="w-10" src="./images/icon.svg" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Action</h1>
                     <p class="text-gray-400">
-                        I specialize in creating interactive websites for individuals and
-                        small businesses.
+                        Action film is a film genre in which the protagonist is thrust into a series of events that
+                        typically involve violence and physical feats.
                     </p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    <a class="text-red-600 font-semibold text-sm" href="">Read More</a>
                 </div>
                 <!-- card -->
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img class="w-10" src="./images/icon.png" alt="" />
-                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <img class="w-10" src="./images/icon.svg" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Romantic Comedy</h1>
                     <p class="text-gray-400">
-                        I specialize in creating interactive websites for individuals and
-                        small businesses.
+                        Romantic comedy is a subgenre of comedy and slice of life fiction, focusing on lighthearted,
+                        humorous plot lines centered on romantic ideas.
                     </p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    <a class="text-red-600 font-semibold text-sm" href="">Read More</a>
                 </div>
                 <!-- card -->
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img class="w-10" src="./images/icon.png" alt="" />
-                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <img class="w-10" src="./images/icon.svg" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Historical Drama</h1>
                     <p class="text-gray-400">
-                        I specialize in creating interactive websites for individuals and
-                        small businesses.
+                        A historical drama is a work set in a past time period, usually used in the context of film and
+                        television. Historical drama includes historical fiction.
                     </p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    <a class="text-red-600 font-semibold text-sm" href="">Read More</a>
                 </div>
                 <!-- card -->
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img class="w-10" src="./images/icon.png" alt="" />
-                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <img class="w-10" src="./images/icon.svg" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Superhero Fiction</h1>
                     <p class="text-gray-400">
-                        I specialize in creating interactive websites for individuals and
-                        small businesses.
+                        Superhero fiction is a genre of speculative fiction examining the adventures, personalities and
+                        ethics of costumed crime fighters.
                     </p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    <a class="text-red-600 font-semibold text-sm" href="">Read More</a>
                 </div>
                 <!-- card -->
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img class="w-10" src="./images/icon.png" alt="" />
-                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <img class="w-10" src="./images/icon.svg" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Psychological thriller</h1>
                     <p class="text-gray-400">
-                        I specialize in creating interactive websites for individuals and
-                        small businesses.
+                        Psychological thriller is a genre combining the thriller and psychological fiction genres. It
+                        describes films that deal with psychological narratives.
                     </p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    <a class="text-red-600 font-semibold text-sm" href="">Read More</a>
                 </div>
                 <!-- card -->
                 <div class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3">
-                    <img class="w-10" src="./images/icon.png" alt="" />
-                    <h1 class="font-medium text-lg dark:text-white">UX / UI Design</h1>
+                    <img class="w-10" src="./images/icon.svg" alt="" />
+                    <h1 class="font-medium text-lg dark:text-white">Mystery</h1>
                     <p class="text-gray-400">
-                        I specialize in creating interactive websites for individuals and
-                        small businesses.
+                        A mystery film is a genre of film that revolves around the solution of a problem or a crime. It
+                        focuses on the efforts of the detective
                     </p>
-                    <a class="text-indigo-600 font-semibold text-sm" href="">Read More</a>
+                    <a class="text-red-600 font-semibold text-sm" href="">Read More</a>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- works -->
-    <div id="works" class="py-40 dark:bg-slate-900">
+    <div id="movies" class="py-40 dark:bg-slate-900">
         <div class="container mx-auto">
             <!-- top -->
             <div class="flex flex-col gap-3 items-center">
-                <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
-                <h1 class="text-3xl dark:text-white">Works & Projects</h1>
-                <p class="w-1/2 text-center text-gray-400">
-                    I help designers, small agencies and businesses bring their ideas to
-                    life. Powered by Figma, VS Code and coffee, I turn your requirements
-                    into a well-designed websites
+                <h1 class="text-red-600 font-bold text-4xl">Movies</h1>
+                <h1 class="text-3xl text-gray-500">Asking Best Movies ever released?</h1>
+                <p class="px-4 text-center dark:text-white">
+                    A film - also called a movie, motion picture, moving picture, picture or photoplay - is a work of
+                    visual art that simulates experiences and otherwise communicates ideas, stories, perceptions,
+                    feelings, beauty, or atmosphere through the use of moving images.
                 </p>
             </div>
             <!-- bottom -->
@@ -223,55 +222,55 @@
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-1.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-2.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-3.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-4.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-5.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-6.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-7.png" />
                 </div>
                 <!-- card -->
                 <div
                     class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="./images/item.png" />
+                    <img src="./images/movie-8.png" />
                 </div>
             </div>
         </div>
     </div>
 
     <!-- contact -->
-    <div id="contact" class="dark:bg-slate-900">
+    <div id="contact" class="dark:bg-slate-900 pb-16">
         <div class="container mx-auto">
             <!-- top -->
             <div class="flex flex-col gap-3 items-center">
-                <h1 class="text-indigo-600 font-bold">CONTACT</h1>
-                <h1 class="text-3xl dark:text-white">Have a Question?</h1>
-                <p class="w-1/2 text-center text-gray-400">
+                <h1 class="text-red-600 font-bold text-4xl">Contact</h1>
+                <h1 class="text-3xl text-gray-500">Have a question?</h1>
+                <p class="px-4 text-center dark:text-white">
                     Do you have an idea? Let's discuss it and see what we can do
                     together.
                 </p>
@@ -279,27 +278,27 @@
             <!-- bottom -->
             <form class="mt-5 p-8 flex flex-col gap-5 items-center">
                 <input
-                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    class="p-3 w-full md:w-1/2 ring-1 ring-slate-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
                     type="text" placeholder="Name Surname" />
                 <input
-                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    class="p-3 w-full md:w-1/2 ring-1 ring-slate-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
                     type="email" placeholder="Email" />
                 <textarea
-                    class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
+                    class="p-3 w-full md:w-1/2 ring-1 ring-slate-300 rounded-xl dark:bg-slate-800 dark:ring-0 dark:text-white"
                     cols="30" rows="10" placeholder="Message..."></textarea>
-                <button class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer">
+                <button class="w-1/2 bg-red-600 text-white rounded-xl px-20 py-4 cursor-pointer hover:bg-red-700">
                     Submit
                 </button>
             </form>
         </div>
     </div>
     <!-- footer -->
-    <div class="w-full  mt-12 border-t dark:bg-slate-900">
-        <div class="container mx-auto py-5 flex items-center justify-between">
+    <div class="w-full  py-6 dark:bg-slate-900">
+        <div class="container mx-auto py-5 flex items-center justify-between flex-col-reverse gap-10 md:flex-row">
             <div class="flex items-center gap-2">
-                <img class="w-8" src="./images/logo.png" alt="" />
-                <span class="text-2xl font-bold  text-indigo-900">Portwind.</span>
+                <img class="w-16" src="./images/logo.png" alt="">
             </div>
+            <p class=" text-slate-500 text-center">&copy; 2022 Merriam-Webster, Incorporated</p>
             <div class="flex gap-4">
                 <img class="w-8 cursor-pointer" src="./images/Facebook.png" alt="" />
                 <img class="w-8 cursor-pointer" src="./images/Snapchat.png" alt="" />
