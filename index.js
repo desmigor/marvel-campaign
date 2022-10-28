@@ -21,6 +21,7 @@ hLinks.forEach(link => {
     link.addEventListener("click", () => {
         menu.classList.toggle("hidden")
         hamburger.classList.toggle("bg-white")
+        close.classList.add("hidden")
     })
 })
 
