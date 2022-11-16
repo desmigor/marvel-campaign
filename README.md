@@ -1,2 +1,7 @@
 # Marvel Campaign
-Marvel Campaign is a landing page built using Tailwind CSS. To view it live, check out the link in the repository description.
+
+This is a repository for a Marvel Campaign landing page concept built using Tailwind CSS.
+
+## [View Live Site](https://marvel-campaign.netlify.app/)
+
+![](./images/home-img.png)
